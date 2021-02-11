@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Feb 2021 pada 05.28
+-- Waktu pembuatan: 11 Feb 2021 pada 16.21
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.13
 
@@ -99,14 +99,6 @@ CREATE TABLE `contact` (
   `csubject` text NOT NULL,
   `cmessage` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `contact`
---
-
-INSERT INTO `contact` (`id`, `cname`, `cemail`, `csubject`, `cmessage`) VALUES
-(18, 'Fariz Hawari', 'fariz.sco.77@gmail.com', 'CV Fariz', 'Hallo nama saya Fariz HAwari bla bla bla'),
-(20, 'Nana', 'nanatrisna@gmail.com', 'Tugas', 'Assalammualaikum nih tugas bangsat');
 
 -- --------------------------------------------------------
 
