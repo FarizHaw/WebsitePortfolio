@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2020 at 06:41 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.4
+-- Waktu pembuatan: 11 Feb 2021 pada 05.25
+-- Versi server: 10.4.17-MariaDB
+-- Versi PHP: 7.4.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `iportfolio`
+-- Database: `sql`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `aboutus_setup`
+-- Struktur dari tabel `aboutus_setup`
 --
 
 CREATE TABLE `aboutus_setup` (
@@ -38,16 +38,16 @@ CREATE TABLE `aboutus_setup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `aboutus_setup`
+-- Dumping data untuk tabel `aboutus_setup`
 --
 
 INSERT INTO `aboutus_setup` (`id`, `shortdesc`, `heading`, `subheading`, `longdesc`, `website`, `dob`) VALUES
-(1, 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.', 'UI/UX Designer & Web Developer.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.', 'https://www.devninja.com', '14 July, 1999');
+(1, 'Nama lengkap saya Fariz Hawari Sugiarto, ber Agama Islam dan saya \r\nsekarang berumur 20 tahun. Saya memiliki kondisi kesehatan yang \r\nsangat baik dan mampu berkomunikasi dengan bahasa indonesia \r\nyang baik dan sopan. Saya adalah seorang mahasiswa yang memiliki\r\nKemauan untuk mempelajari hal-hal baru. Saya mampu bekerja \r\nsecara mandiri maupun dalam tim dengan baik,', 'Kreatif Post / Web Developer', '', '            ', '', '29, Oktober 2000');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_users`
+-- Struktur dari tabel `admin_users`
 --
 
 CREATE TABLE `admin_users` (
@@ -59,16 +59,16 @@ CREATE TABLE `admin_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `admin_users`
+-- Dumping data untuk tabel `admin_users`
 --
 
 INSERT INTO `admin_users` (`id`, `username`, `user_id`, `user_pass`, `user_access`) VALUES
-(1, 'Monu Boss', 'monu@admin.com', 'admin123', 1);
+(1, 'Admin', 'admin@admin.com', 'admin', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `basic_setup`
+-- Struktur dari tabel `basic_setup`
 --
 
 CREATE TABLE `basic_setup` (
@@ -80,16 +80,16 @@ CREATE TABLE `basic_setup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `basic_setup`
+-- Dumping data untuk tabel `basic_setup`
 --
 
 INSERT INTO `basic_setup` (`id`, `title`, `description`, `keyword`, `icon`) VALUES
-(1, 'Alex Smith', 'i am a web developer, i make website and php web portals .', 'web development,php development', 'icons8-computer-support-64.png');
+(1, 'Fariz Hawari', 'Website Portfolio ini dibuat untuk memenuhi tugas kuliah:)', 'Mahasiswa,Programer,Media Creator', '7060718_preview.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Struktur dari tabel `contact`
 --
 
 CREATE TABLE `contact` (
@@ -101,17 +101,17 @@ CREATE TABLE `contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `contact`
+-- Dumping data untuk tabel `contact`
 --
 
 INSERT INTO `contact` (`id`, `cname`, `cemail`, `csubject`, `cmessage`) VALUES
-(16, 'Shubham Seth', 'ristar@gmail.com', 'Partnership', 'i want to work with you , please contact me on my personal mobile no\r\nat <strong>7838403916</strong>'),
-(17, 'Sukriti Seth', 'sukriti46737@gmail.com', 'Complaint', 'i used your service but i dont like it you are worst servoces provider ever i am gonna sue you on fedral court and you have to pay a very big ammount to me becayuse of you i loss 20000 million dollars and you provide the worst service u have ever.');
+(18, 'Fariz Hawari', 'fariz.sco.77@gmail.com', 'CV Fariz', 'Hallo nama saya Fariz HAwari bla bla bla'),
+(20, 'Nana', 'nanatrisna@gmail.com', 'Tugas', 'Assalammualaikum nih tugas bangsat');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `personal_setup`
+-- Struktur dari tabel `personal_setup`
 --
 
 CREATE TABLE `personal_setup` (
@@ -132,16 +132,16 @@ CREATE TABLE `personal_setup` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `personal_setup`
+-- Dumping data untuk tabel `personal_setup`
 --
 
 INSERT INTO `personal_setup` (`id`, `profilepic`, `name`, `twitter`, `facebook`, `instagram`, `skype`, `linkedin`, `github`, `homewallpaper`, `professions`, `location`, `mobile`, `emailid`) VALUES
-(1, 'profile-img.jpg', 'Alex Smith', '', 'https://www.facebook.com/oyeitsmg', 'https://www.instagram.com/oyeitsmg', '@oyeitsmg', 'https://in.linkedin.com/in/whomonugiri', 'https://github.com/whomonugiri/', 'hero-bg.jpg', 'Web Developer,PHP Developer,Youtuber,Graphic Designer', 'C-537 Mahavir Enclave Part 3, Street No 45 New Delhi 110059', '+917548935467', 'alex@gmail.com');
+(1, 'nih.jpg', 'Fariz Hawari', '', 'https://www.facebook.com/fariz.SCO.77', 'https://www.instagram.com/vestolaer', '', '', 'https://github.com/FarizHaw/', 'samuel-scalzo-xyuYk9oLA8I-unsplash.jpg', 'Mahasiswa,Programer,Media Creator', 'Jl. Babakan Sumedang, Komplek PosGiro 05/05 Kab.Bandung', '+6289630908640', 'farizh77@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `portfolio`
+-- Struktur dari tabel `portfolio`
 --
 
 CREATE TABLE `portfolio` (
@@ -152,20 +152,21 @@ CREATE TABLE `portfolio` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `portfolio`
+-- Dumping data untuk tabel `portfolio`
 --
 
 INSERT INTO `portfolio` (`id`, `projectname`, `projectpic`, `projectlink`) VALUES
-(8, '', 'portfolio-1.jpg', '#'),
-(9, '', 'portfolio-2.jpg', '#'),
-(10, '', 'portfolio-3.jpg', '#'),
-(11, '', 'portfolio-6.jpg', ''),
-(12, '', 'portfolio-6.jpg', '');
+(8, '1', '1.jpg', '#'),
+(9, '2', '2.jpg', '#'),
+(10, '3', '3.jpg', '#'),
+(11, '4', '4.jpg', '#'),
+(12, '5', '5.jpg', '#'),
+(14, '6', '6.jpg', '#');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `resume`
+-- Struktur dari tabel `resume`
 --
 
 CREATE TABLE `resume` (
@@ -178,18 +179,21 @@ CREATE TABLE `resume` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `resume`
+-- Dumping data untuk tabel `resume`
 --
 
 INSERT INTO `resume` (`id`, `category`, `title`, `year`, `ogname`, `workdesc`) VALUES
-(7, 'e', 'Class 12th', '2016 - 2018', 'Navjeewan Academy Senior Secondary School, CBSE', 'it was fun'),
-(8, 'e', 'Pursuing Bachelor of Computer Application', '2018-2021', 'Indira Gandhi National Open University, New Delhi', ''),
-(9, 'pe', 'Data Operator', '2020 - Present', 'Akhand Jyoti Services Pvt. Ltd.', '');
+(10, 'e', 'Sekolah Dasar', '2006-2012', 'SDN Sejahtera IV Bandung', ''),
+(11, 'e', 'Sekolah Menengah Pertama', '2012-2015', 'SMPN 46 Bandung', ''),
+(12, 'e', 'Sekolah Menengah Kejuruan', '2015-2018', 'SMK Informatika Bandung', 'Jurusan Rekayasa Perangkat Lunak (RPL)'),
+(13, 'pe', 'Magang', '2018', 'Percetakan Ijazah', ''),
+(14, 'pe', 'Freelance', '2017-2020', 'Desain Banner & Digital Wedding', ''),
+(15, 'pe', 'Freelance', '2019-Sekarang', 'WR Project, RAB Photography', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `skills`
+-- Struktur dari tabel `skills`
 --
 
 CREATE TABLE `skills` (
@@ -199,7 +203,7 @@ CREATE TABLE `skills` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `skills`
+-- Dumping data untuk tabel `skills`
 --
 
 INSERT INTO `skills` (`id`, `skill`, `score`) VALUES
@@ -208,149 +212,113 @@ INSERT INTO `skills` (`id`, `skill`, `score`) VALUES
 (14, 'PHP', '75'),
 (15, 'MYSQL', '75'),
 (16, 'Javascript', '60'),
-(17, 'Photoshop', '70'),
-(18, 'Bootstrap', '50');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `userinfo`
---
-
-CREATE TABLE `userinfo` (
-  `id` int(11) NOT NULL,
-  `userq` varchar(250) NOT NULL,
-  `userv` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `userinfo`
---
-
-INSERT INTO `userinfo` (`id`, `userq`, `userv`) VALUES
-(1, 'Birthday', '14 July,1999'),
-(2, 'Age', '21'),
-(3, 'Website', 'www.monugiri.com'),
-(4, 'Degree', 'Bachelors Degree'),
-(5, 'Mobile', '+917838403916'),
-(6, 'Email', 'whomonugiri@gmail.com'),
-(7, 'City', 'New Delhi');
+(17, 'Photoshop', '90'),
+(18, 'Bootstrap', '55'),
+(19, 'MS Word', '90');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `aboutus_setup`
+-- Indeks untuk tabel `aboutus_setup`
 --
 ALTER TABLE `aboutus_setup`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `admin_users`
+-- Indeks untuk tabel `admin_users`
 --
 ALTER TABLE `admin_users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `basic_setup`
+-- Indeks untuk tabel `basic_setup`
 --
 ALTER TABLE `basic_setup`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `contact`
+-- Indeks untuk tabel `contact`
 --
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `personal_setup`
+-- Indeks untuk tabel `personal_setup`
 --
 ALTER TABLE `personal_setup`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `portfolio`
+-- Indeks untuk tabel `portfolio`
 --
 ALTER TABLE `portfolio`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `resume`
+-- Indeks untuk tabel `resume`
 --
 ALTER TABLE `resume`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `skills`
+-- Indeks untuk tabel `skills`
 --
 ALTER TABLE `skills`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `userinfo`
---
-ALTER TABLE `userinfo`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `aboutus_setup`
+-- AUTO_INCREMENT untuk tabel `aboutus_setup`
 --
 ALTER TABLE `aboutus_setup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `admin_users`
+-- AUTO_INCREMENT untuk tabel `admin_users`
 --
 ALTER TABLE `admin_users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `basic_setup`
+-- AUTO_INCREMENT untuk tabel `basic_setup`
 --
 ALTER TABLE `basic_setup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `contact`
+-- AUTO_INCREMENT untuk tabel `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `personal_setup`
+-- AUTO_INCREMENT untuk tabel `personal_setup`
 --
 ALTER TABLE `personal_setup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `portfolio`
+-- AUTO_INCREMENT untuk tabel `portfolio`
 --
 ALTER TABLE `portfolio`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT for table `resume`
+-- AUTO_INCREMENT untuk tabel `resume`
 --
 ALTER TABLE `resume`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `skills`
+-- AUTO_INCREMENT untuk tabel `skills`
 --
 ALTER TABLE `skills`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
---
--- AUTO_INCREMENT for table `userinfo`
---
-ALTER TABLE `userinfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
